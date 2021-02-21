@@ -1,0 +1,152 @@
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative; */
+    /* animation-name: square;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-play-state: running; */ 
+    /* animation: square 3s linear 1s infinite alternate backwards running;
+} */
+/* @keyframes square {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: lime;
+        left: 250px;
+        top: 0px;
+    }
+    50% {
+        background-color: darkblue;
+        left: 250px;
+        top: 250px;
+        border-radius: 50%;
+    }
+    75% {
+        background-color: orange;
+        left: 0px;
+        top: 250px;
+    }
+    100% {
+        background-color: blue;
+        left: 0px;
+        top: 0px;
+        border-radius: 0px;
+    }
+} */
+
+div#circle {
+    width: 200px;
+    height: 200px;
+    border: 15px solid red;
+    margin: 0 auto;
+    margin-top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: circle 2s infinite forwards;
+}
+@keyframes circle {
+    0% {
+        border-color: red;
+        transform: scale(1);
+    }
+    25% {
+        border-color:gold;
+        transform: scale(1.1);
+    }
+    50% {
+        border-color: yellow;
+        transform: scale(1.5);
+    }
+    75% {
+        border-color: dodgerblue;
+        transform: scale(1.1);
+    }
+    100% {
+        border-color: purple;
+        transform: scale(1);
+    }
+}
+div#square {
+    width: 75px;
+    height: 75px;
+    border: 5px solid limegreen;
+    animation: square 2s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes square {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        border-color:aqua;
+        border-width: 10px;
+    }
+    50% {
+        border-color: coral;
+        border-width: 20px;
+    }
+    75% {
+        border-color: yellow;
+        border-width: 70px;
+        border-radius: 50%;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-width: 5px;
+    }
+}
+.newAnimation {
+    width: 800px;
+    height: 5px;
+    background-color: red;
+    padding-top: 100px;
+    margin-top: 100px;
+}
+a {
+    color: whitesmoke;
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    overflow: hidden;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+}
+a:nth-child(5) {
+    background: linear-gradient(90deg,#755bea,#ff72c0);
+}
+span {
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0.5;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
