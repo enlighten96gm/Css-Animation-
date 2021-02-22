@@ -14,6 +14,25 @@
     <div class="newAnimation"></div>
     <a href="#">Button</a>
     <a href="#">Button</a>
+    <div class="newAnimation"></div>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <section>
+        <h2>SCROLLER SUPER ROLLER</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem voluptate optio officia delectus eveniet nostrum velit, dolore distinctio dolorem vitae nobis, ipsa quia debitis. Libero dolor est perspiciatis voluptas?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem voluptate optio officia delectus eveniet nostrum velit, dolore distinctio dolorem vitae nobis, ipsa quia debitis. Libero dolor est perspiciatis voluptas?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem voluptate optio officia delectus eveniet nostrum velit, dolore distinctio dolorem vitae nobis, ipsa quia debitis. Libero dolor est perspiciatis voluptas?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem voluptate optio officia delectus eveniet nostrum velit, dolore distinctio dolorem vitae nobis, ipsa quia debitis. Libero dolor est perspiciatis voluptas?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem voluptate optio officia delectus eveniet nostrum velit, dolore distinctio dolorem vitae nobis, ipsa quia debitis. Libero dolor est perspiciatis voluptas?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem voluptate optio officia delectus eveniet nostrum velit, dolore distinctio dolorem vitae nobis, ipsa quia debitis. Libero dolor est perspiciatis voluptas?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem voluptate optio officia delectus eveniet nostrum velit, dolore distinctio dolorem vitae nobis, ipsa quia debitis. Libero dolor est perspiciatis voluptas?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem voluptate optio officia delectus eveniet nostrum velit, dolore distinctio dolorem vitae nobis, ipsa quia debitis. Libero dolor est perspiciatis voluptas?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem voluptate optio officia delectus eveniet nostrum velit, dolore distinctio dolorem vitae nobis, ipsa quia debitis. Libero dolor est perspiciatis voluptas?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem voluptate optio officia delectus eveniet nostrum velit, dolore distinctio dolorem vitae nobis, ipsa quia debitis. Libero dolor est perspiciatis voluptas?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quidem voluptate optio officia delectus eveniet nostrum velit, dolore distinctio dolorem vitae nobis, ipsa quia debitis. Libero dolor est perspiciatis voluptas?
+            
+        </p>
+    </section>
     <script type="text/javascript">
     const buttons = document.querySelectorAll('a')
     buttons.forEach(btn => {
@@ -31,6 +50,12 @@
             }, 1000)
         })
     }) 
+    let progress = document.getElementById('progressbar')
+    let totalHeight = document.body.scrollHeight - window.innerHeight
+    window.onscroll = function() {
+        let progressHeight = (window.pageYOffset / totalHeight) * 100
+        progress.style.height = progressHeight + "%"
+    }
      </script>
 </body>
 </html>
